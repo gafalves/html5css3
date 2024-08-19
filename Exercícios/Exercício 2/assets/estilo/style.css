@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(237, 237, 237);
+}
+
+.container_header, .container_botoes {
+    display: flex;
+    justify-content: center;
+}
+
+.container_formulario {
+    display: flex;
+    justify-content: space-between;
+}
+
+header {
+    margin-top: 20px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+.secao_formulario {
+    margin-top: 30px;
+}
+
+.dados_pessoais {
+    margin-right: 15px;
+    padding: 10px;
+    flex: 1;
+}
+
+.endereco {
+    padding: 10px;
+    flex: 1;
+}
+
+fieldset {
+    display: block;
+    padding: 10px;
+    background-color: rgb(210, 210, 210);
+    width: 325px;
+    margin: auto;
+    text-align: center;
+}
+
+fieldset label {
+    text-align: left;
+}
+
+legend {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+option, input {
+    font-size: 15px;
+}
+
+.secao_formulario input {
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+.container_botoes input {
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    background-color: rgb(187, 187, 187);
+}
+
+@media (max-width: 600px) {
+    .container_formulario {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    label {
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .secao_formulario input {
+        margin-top: 5px;
+        display: block;
+    }
+}

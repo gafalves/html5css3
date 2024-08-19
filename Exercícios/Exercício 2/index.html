@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/estilo/style.css">
+    <title>Primeiro Formulário</title>
+</head>
+<body>
+    <main>
+       <div class="container_header">
+           <header>
+                <h1>Meu Primeiro Formulário</h1>
+           </header>
+       </div>
+       <section class="secao_formulario">
+            <div class="container_formulario">
+                <div class="dados_pessoais">
+                        <form action="#">
+                            <fieldset>
+                                <legend>Dados Pessoais</legend>
+                                <label for="nome">
+                                    Nome:
+                                    <input type="text" id="nome" name="nome" required>
+                                </label>
+                                <label for="sobrenome">
+                                    Sobrenome:
+                                    <input type="text" id="sobrenome" name="sobrenome" required>
+                                </label>
+                                <label for="data_nascimento">
+                                    Data de Nascimento:
+                                    <input type="date" name="data_nascimento" id="data_nascimento" required>
+                                </label>
+                                <label for="nacionalidade">
+                                    Nacionalidade:
+                                    <input type="text" name="nacionalidade" id="nacionalidade">
+                                </label>
+                            </fieldset>
+                        </form>
+                </div>
+
+                <div class="endereco">
+                        <form action="#">
+                            <fieldset>
+                                <legend>Endereço</legend>
+                                <label for="pais">
+                                    País:
+                                    <input list="paises" name="pais" id="pais">
+                                    <datalist id="paises">
+                                        <option value="Brasil"></option>
+                                        <option value="Estados Unidos"></option>
+                                        <option value="Canadá"></option>
+                                    </datalist>
+                                </label>
+                                <label for="estado">
+                                    Estado:
+                                    <input type="text" name="estado" id="estado">
+                                </label>
+                                <label for="cidade">
+                                    Cidade:
+                                    <input type="text" name="cidade" id="cidade">
+                                </label>
+                                <label for="rua">
+                                    Rua:
+                                    <input type="text" name="rua" id="rua">
+                                </label>
+                            </fieldset>
+                        </form>
+                </div>
+            </div>
+       </section>
+       <section class="secao_botoes">
+            <div class="container_botoes">
+                <input type="submit" value="Enviar">
+            </div>
+       </section> 
+    </main>
+</body>
+</html>
